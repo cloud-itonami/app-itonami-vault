@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# deploy-vault.sh — provision + deploy vault.etzhayyim.com.
+# deploy-vault.sh — provision + deploy vault.itonami.app.
 #
 # Idempotent. Safe to re-run; each wrangler command errors gracefully if the
 # resource already exists, and we only update wrangler.jsonc when the D1 id is

@@ -230,7 +230,7 @@ export const OPTIONS: RequestHandler = async () =>
   new Response(null, {
     status: 204,
     headers: {
-      "access-control-allow-origin": "https://vault.etzhayyim.com",
+      "access-control-allow-origin": "https://vault.itonami.app",
       "access-control-allow-methods": "GET,POST,OPTIONS",
       "access-control-allow-headers": "content-type",
     },

@@ -5,8 +5,8 @@
   "compatibility_flags": ["nodejs_compat"],
   "routes": [
     {
-      "pattern": "vault.etzhayyim.com/*",
-      "zone_name": "etzhayyim.com"
+      "pattern": "vault.itonami.app/*",
+      "zone_name": "itonami.app"
     }
   ],
   "assets": {

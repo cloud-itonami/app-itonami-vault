@@ -1,4 +1,4 @@
-# vault.etzhayyim.com — Zero-Knowledge Secret Manager
+# vault.itonami.app — Zero-Knowledge Secret Manager
 
 DID-native, AT-Protocol-pipethrough secret manager. 1Password-equivalent self-hosted.
 
@@ -8,7 +8,7 @@ DID-native, AT-Protocol-pipethrough secret manager. 1Password-equivalent self-ho
 etzhayyim CLI / browser  ──Bearer JWT (AT session or Service Auth lxm)──▶  atproto.etzhayyim.com (PDS)
                                                                               │ pipethrough
                                                                               ▼
-                                                                       vault.etzhayyim.com (this Worker)
+                                                                       vault.itonami.app (this Worker)
                                                                               │
                                        ┌──────────────────────────────────────┴────────────┐
                                        ▼                                                   ▼
@@ -102,7 +102,7 @@ PDS pipethrough: ensure `50-infra/cloudflare/workers/atproto/wrangler.jsonc` has
 
 ## Comparison vs 1Password
 
-| Axis | 1Password | vault.etzhayyim.com |
+| Axis | 1Password | vault.itonami.app |
 |---|---|---|
 | Identity | email + master pw + Secret Key | DID + Passkey (PRF) |
 | Zero-knowledge | proprietary SRP + PBKDF2 | WebAuthn PRF + AES key-wrap |

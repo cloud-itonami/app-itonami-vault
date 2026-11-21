@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
-# smoke-vault.sh — end-to-end test of vault.etzhayyim.com via PDS pipethrough.
+# smoke-vault.sh — end-to-end test of vault.itonami.app via PDS pipethrough.
 #
 # Exercises: health → createVault → putItem → listItems → getItem → deleteItem
 # Auth: reads session from `etzhayyim auth login` (~/.etzhayyim/auth.json) or etzhayyim_TOKEN.
@@ -9,7 +9,7 @@
 set -euo pipefail
 
 PDS="${PDS_URL:-https://atproto.etzhayyim.com}"
-VAULT_DIRECT="${VAULT_URL:-https://vault.etzhayyim.com}"
+VAULT_DIRECT="${VAULT_URL:-https://vault.itonami.app}"
 TEST_NAME="smoke-$(date +%Y%m%d-%H%M%S)"
 
 say()  { printf '\n\033[1;34m[smoke] %s\033[0m\n' "$*"; }
@@ -32,7 +32,7 @@ HEALTH=$(curl -sS -o /dev/null -w '%{http_code}' "$VAULT_DIRECT/health" || echo 
 if [[ "$HEALTH" == "200" ]]; then
   pass "vault worker reachable directly ($HEALTH)"
 else
-  say "  (skip direct — vault.etzhayyim.com route not configured: $HEALTH). PDS pipethrough path still valid."
+  say "  (skip direct — vault.itonami.app route not configured: $HEALTH). PDS pipethrough path still valid."
 fi
 
 # ── 2. Pipethrough via PDS: createVault ─────────────────────────────────────

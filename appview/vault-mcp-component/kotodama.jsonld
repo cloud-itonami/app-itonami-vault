@@ -1,6 +1,6 @@
 {
   "@context": "https://etzhayyim.com/ns/kotodama/v1",
-  "@id": "did:web:vault.etzhayyim.com",
+  "@id": "did:web:vault.itonami.app",
   "accent": "#6366f1",
   "component": {
     "path": "component.wasm"
