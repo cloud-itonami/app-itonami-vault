@@ -90,7 +90,7 @@ function makeEnv(opts: {
 }
 
 function reqJson(body: unknown, headers: Record<string, string> = {}): Request {
-  return new Request("https://vault.etzhayyim.com/xrpc/test", {
+  return new Request("https://vault.itonami.app/xrpc/test", {
     method: "POST",
     headers: { authorization: "Bearer test-jwt", "content-type": "application/json", ...headers },
     body: JSON.stringify(body),

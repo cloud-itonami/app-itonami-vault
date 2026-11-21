@@ -2,7 +2,7 @@
   "name": "etzhayyim-vault-worker",
   "version": "1.0.0",
   "private": true,
-  "description": "vault.etzhayyim.com Cloudflare Worker — zero-knowledge secret manager (handlers + auth + audit). Tests cover the security invariants.",
+  "description": "vault.itonami.app Cloudflare Worker — zero-knowledge secret manager (handlers + auth + audit). Tests cover the security invariants.",
   "type": "module",
   "scripts": {
     "deploy": "wrangler deploy",

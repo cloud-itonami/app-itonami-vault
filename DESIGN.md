@@ -1,7 +1,7 @@
-# vault.etzhayyim.com (etzhayyim-project-vault) Design Document
+# vault.itonami.app (etzhayyim-project-vault) Design Document
 
 ## 概要 (Overview)
-`vault.etzhayyim.com` は、1Password のようなパスワードおよびシークレット管理を提供するアプリケーションです。
+`vault.itonami.app` は、1Password のようなパスワードおよびシークレット管理を提供するアプリケーションです。
 バックエンドのセキュアな保存先として HashiCorp Vault を利用し、Clerk によって提供される `user_id` と `org_id` に基づいてユーザーごとの「Personal Vault」と組織内の「Shared Vault」を分離・管理します。
 
 ## アーキテクチャ (Architecture)

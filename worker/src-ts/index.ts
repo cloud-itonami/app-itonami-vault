@@ -1,4 +1,4 @@
-// vault.etzhayyim.com — Cloudflare Worker entry point.
+// vault.itonami.app — Cloudflare Worker entry point.
 //
 // Zero-knowledge secret manager. All ciphertext + wrapped keys are opaque to
 // this Worker; client (etzhayyim CLI / browser) handles AES-GCM + AES-key-wrap.
